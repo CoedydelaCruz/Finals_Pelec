@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1 class="logo">Coedy</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+          
+      <button class="toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i> 
+      </button>
+    </nav>
+    <div class="main-content" id="home">
+      <div class="image-container">
+        <div class="circle"></div>
+        <img src="profile image.jpg" alt="Coedy">
+      </div>
+      <div class="text-content">
+        <h2>Hi, It's <span class="highlight">Coedy</span></h2>
+        <br>
+        <h3>Bachelor of Science Technology</h3>
+        <br>
+        <p>
+            I combine user insights with creative problem-solving to deliver interfaces 
+            that are both aesthetically pleasing and highly functional.
+            Let's enhance user experiences together!
+        </p>
+        <div class="social-icons">
+          <a href="https://facebook.com/coedy.delacruz.549"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/delacruzcoedy/"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/CoedydelaCruz"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Hello, I'm Coedy de la Cruz, I'm Information Technology student pursuing my 
+          Bachelor of Science in Information Technology (BSIT). Throughout my academic journey, 
+          I’ve gained a strong foundation in Python, HTML, and CSS, and I like to design stuff, 
+          in Figma not in Coding :)
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2> Skills and work experience</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+            </div>
+            </div>
+         </div>
+      </section>
+      
+          
+          <div class="future-job">
+            <h2>Future Job</h2>
+            <p>As a passionate IT professional, I aim to work in roles that involve:</p>
+            <ul>
+              <li>Software Development</li>
+              <li>Web Development</li>
+              <li>Cloud Computing</li>
+              <li>Cybersecurity</li>
+              <li>Data Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+    
+
+    <section id="contact">
+      <h2>Contact :</h2>
+      <p><strong>Email:</strong> <a href="mailto:coedy0123@gmail.com">coedy0123@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+09195883381">09195883381</a></p>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2024 Coedy de la Cruz. All Rights Reserved.</p>
+  </footer>
+  
+  <script>
+      const toggleButton = document.querySelector('.toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      toggleButton.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+  </script>
+  </div>
+</body>
+</html>
